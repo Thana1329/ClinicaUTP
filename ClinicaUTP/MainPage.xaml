@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClinicaUTP.MainPage"
+             BackgroundColor="#FFFFFF">
+
+    <ContentPage.Resources>
+        <Color x:Key="1">#1C4266</Color>
+        <Color x:Key="2">#31587D</Color>
+        <Color x:Key="3">#F5F5F5</Color>
+           
+    </ContentPage.Resources>
+
+    <!--Banner-->
+    <HorizontalStackLayout>
+
+        <Frame BackgroundColor="{StaticResource 1}" WidthRequest="720">
+            <Grid>
+
+                <Image Source="up.png"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"/>
+
+                <Image Source="up.png"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       Rotation="180"/> 
+
+
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Label Text="¡Bienvenido al portal de administración!" 
+                       HorizontalTextAlignment="Center"
+                       FontFamily="PaytonOneRegular"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="Title"
+                       LineBreakMode="WordWrap"
+                       MaxLines="2"
+                       WidthRequest="300"
+                       Padding="0,200,0,40"/> 
+
+                    <Image Source="logo.png" 
+                       HeightRequest="200" 
+                       WidthRequest="200" 
+                       HorizontalOptions="Center"/>
+                
+                    <Label Text="Clínica UTP" 
+                       FontFamily="PaytonOneRegular" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Padding="0,40,0,5"/>
+                
+                    <Label Text="University Clinic" 
+                       FontSize="Subtitle" 
+                       FontFamily="PaytonOneRegular" 
+                       TextColor="White" 
+                       HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+
+
+
+        <!--Parte del form-->
+        <Grid>
+            <Frame Margin="60,0,10,0"
+                   HorizontalOptions="End"
+                   BackgroundColor="{StaticResource 3}"
+                   WidthRequest="720"
+                   HeightRequest="690"
+                   BorderColor="White"
+                   >
+                
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Title"
+                    FontFamily="Paytone One, sans-serif"
+                    TextColor="{StaticResource 1}"
+                    HorizontalTextAlignment="Center"
+                    Text="Inicia sesión como administrador"
+                    Margin="0, 100, 0, 0"/>
+            </Frame>
+        </Grid>
+        
+
+    </HorizontalStackLayout>
+
+
+</ContentPage>
